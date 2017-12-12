@@ -47,7 +47,7 @@ public class ItemController {
 	 */
 	@RequestMapping("item/save")
 	@ResponseBody
-	public E3mallResult saveItem(TbItem item,TbItemDesc itemDesc){
-		return itemService.saveItem(item, itemDesc);
+	public E3mallResult saveItem(TbItem item,TbItemDesc itemDesc,String itemParams){
+		return itemService.saveItem(item, itemDesc,itemParams);
 	}
 }

@@ -30,5 +30,17 @@
 	<!-- 引用服务 -->
 	<dubbo:reference interface="cn.e3.manager.service.ItemCatService"
 		id="itemCatService"  timeout="1000000" retries="2" />
+	<!-- 引用服务 -->
+	<dubbo:reference interface="cn.e3.content.service.ContentCategoryService"
+		id="contentCategoryService"  timeout="1000000" retries="2" />
+	<!-- 引用服务 -->
+	<dubbo:reference interface="cn.e3.content.service.ContentService"
+		id="contentService"  timeout="1000000" retries="2" />
+	<!-- 引用服务 -->
+	<dubbo:reference interface="cn.e3.manager.service.ItemParamService"
+		id="itemParamService"  timeout="1000000" retries="2" />
+	<!-- 搜索服务 -->
+	<dubbo:reference id="searchItemService"
+		interface="cn.e3.search.service.SearchItemService" timeout="1000000" retries="2"/>
 
 </beans>
